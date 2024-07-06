@@ -1,0 +1,21 @@
+@import '_variables.scss';
+@import 'about.scss';
+@import 'contact.scss';
+@import 'home.scss';
+@import 'not-found.scss';
+@import 'projects.scss';
+@import 'nav-bar.scss';
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.content-container {
+  width: 100vw;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+}

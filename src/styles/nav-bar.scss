@@ -1,0 +1,45 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  .lg-links {
+    display: none;
+    @media screen and (min-width: $laptop) {
+      display: inline;
+    }
+    a {
+      margin-left: 10px;
+    }
+  }
+  .sm-active {
+    display: flex;
+    @media screen and (min-width: $laptop) {
+      display: none;
+    }
+  }
+  .sm-links {
+    flex-direction: column;
+    position: fixed;
+    background-color: white;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    border-left: solid 1px black;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 200px;
+    padding: 20px 10px 0;
+    a {
+      margin: 3px 0;
+    }
+  }
+  a:hover {
+    color: blue;
+    text-decoration: underline;
+  }
+  button:hover {
+    background-color: gray;
+    color: white;
+  }
+}
