@@ -1,0 +1,35 @@
+.contact-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .form-container {
+    width: 90%;
+    @media screen and (min-width: $laptop) {
+      width: 800px;
+    }
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    button[type='submit'] {
+      height: 50px;
+      border: solid 1px black;
+    }
+    input[type='text'], input[type='email'], textarea {
+      margin-bottom: 10px;
+      border: solid 1px black;
+      width: 100%;
+      padding: 5px;
+      border-radius: 5px;
+    }
+    textarea {
+      resize: none;
+      height: 150px;
+    }
+    p {
+      font-size: 1.2em;
+      margin-bottom: 5px;
+    }
+  }
+}
