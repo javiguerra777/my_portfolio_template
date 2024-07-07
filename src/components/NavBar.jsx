@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom"
 import { motion } from "framer-motion";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";
+import DownloadResume from "./DownloadResume";
 
 const sidebarVariants = {
   open: {
@@ -37,18 +38,19 @@ const NavBar = () => {
         <NavLink to="/projects">Projects</NavLink>
         <NavLink to="/contact">Contact</NavLink>
         <NavLink to="/about">About</NavLink>
+        <DownloadResume />
       </section>
       <section className="sm-active">
         <button 
         type="button"
         onClick={() => setOpen(true)}
-        className="border border-black border-2 p-2 rounded"
+        className="border border-black border-2 p-2 rounded bg-white"
         >
-          <GiHamburgerMenu size={25} />
+          <GiHamburgerMenu size={25} color="black"/>
         </button>
       </section>
       <motion.aside 
-      className="sm-active sm-links"
+      className="mobile-navigation sm-active sm-links"
       variants={sidebarVariants}
       initial="closed"
       animate={open ? 'open' : 'closed'}
@@ -67,6 +69,7 @@ const NavBar = () => {
         <NavLink to="/projects">Projects</NavLink>
         <NavLink to="/contact">Contact</NavLink>
         <NavLink to="/about">About</NavLink>
+        <DownloadResume />
       </motion.aside>
     </nav>
   )

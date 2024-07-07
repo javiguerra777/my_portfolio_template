@@ -3,10 +3,18 @@
   justify-content: space-between;
   align-items: center;
   min-height: 100px;
+  background-color: #744af6;
+  color: white;
+  position: sticky;
+  top: 0;
+  .mobile-navigation {
+    color: black;
+  }
   .lg-links {
     display: none;
+    font-size: 1.2rem;
     @media screen and (min-width: $laptop) {
-      display: inline;
+      display: flex;
     }
     a {
       margin-left: 10px;
@@ -30,6 +38,7 @@
     border-bottom-left-radius: 10px;
     width: 200px;
     padding: 20px 10px 0;
+    font-size: 1.1rem;
     a {
       margin: 3px 0;
     }
