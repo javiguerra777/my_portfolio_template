@@ -4,6 +4,35 @@
   flex-direction: column;
   .home-subsection {
     min-height: 100vh;
+    padding: 50px 15px 0;
+    @media screen and (min-width: $tablet) {
+      padding: 50px 70px 0;
+    }
+    @media screen and (min-width: $laptop) {
+      padding: 50px 100px 0;
+    }
+    .subsection-intro-header {
+      font-size: 1.5rem;
+    }
+    .subsection-big-header {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    .subsection-paragraph {
+      margin-bottom: 15px;
+      font-size: 1.2rem;
+      max-width: 700px;
+    }
+    a {
+      border: solid 1px black;
+      max-width: 200px;
+      padding: 5px;
+      text-align: center;
+    }
+    a:hover {
+      background-color: black;
+      color: white;
+    }
   }
   .home-hero {
     position: relative;
@@ -16,12 +45,8 @@
       left: 0;
       object-fit: cover;
     }
-    h2, p {
-      margin-bottom: 10px;
-    }
-    a {
-      border: solid 1px black; 
-      padding: 5px;
-    }
+  }
+  .overview {
+    background-color: whitesmoke;
   }
 }
