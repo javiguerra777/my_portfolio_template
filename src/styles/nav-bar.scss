@@ -7,9 +7,7 @@
   color: white;
   position: sticky;
   top: 0;
-  .mobile-navigation {
-    color: black;
-  }
+  z-index: 98;
   .lg-links {
     display: none;
     font-size: 1.2rem;
@@ -27,6 +25,7 @@
     }
   }
   .sm-links {
+    color: black;
     flex-direction: column;
     position: fixed;
     background-color: white;
@@ -38,9 +37,10 @@
     border-bottom-left-radius: 10px;
     width: 200px;
     padding: 20px 10px 0;
-    font-size: 1.1rem;
+    z-index: 99;
     a {
       margin: 3px 0;
+      font-size: 1.1rem;
     }
   }
   a:hover {

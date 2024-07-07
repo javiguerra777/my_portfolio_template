@@ -50,7 +50,7 @@ const NavBar = () => {
         </button>
       </section>
       <motion.aside 
-      className="mobile-navigation sm-active sm-links"
+      className="sm-active sm-links"
       variants={sidebarVariants}
       initial="closed"
       animate={open ? 'open' : 'closed'}
