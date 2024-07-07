@@ -1,4 +1,5 @@
-import { Routes, Route } from "react-router-dom"
+import { useEffect } from "react"
+import { Routes, Route, useLocation } from "react-router-dom"
 import NavBar from "./components/NavBar"
 import Home from "./pages/Home"
 import Projects from "./pages/Projects"
@@ -7,8 +8,15 @@ import About from "./pages/About"
 import NotFound from "./pages/NotFound"
 
 function App() {
+  const { pathname } = useLocation()
+  useEffect(() => {
+    const navigationContainer = document.getElementById("navigation-container");
+    if (navigationContainer) {
+      navigationContainer.scrollTop = 0;
+    }
+  }, [pathname]);
   return (
-    <section className="content-container">
+    <section className="content-container" id="navigation-container">
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
