@@ -1,0 +1,45 @@
+.about-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .about-content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    @media screen and (min-width: $laptop) {
+      flex-direction: row;
+      height: 80%;
+    }
+    .description-container {
+      margin: 20px 0 0;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      height: 100%;
+      width: 100%;
+      @media screen and (min-width: $laptop){
+        margin: 0 0 0 30px;
+      }
+      .contact-me-btn {
+        border: solid 1px black;
+        padding: 5px;
+      }
+      p {
+        font-size: 1.1rem;
+        margin-top: 10px;
+      }
+    }
+    .image-container {
+      height: 100%;
+      width: 100%;
+      .headshot {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}

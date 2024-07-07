@@ -11,4 +11,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <App />
     </BrowserRouter>
   </React.StrictMode>,
-)
+);
+
+
+// Credit to https://pixabay.com/vectors/avatar-icon-placeholder-profile-3814081/ for the placeholder avatar icon
