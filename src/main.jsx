@@ -15,3 +15,4 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 
 
 // Credit to https://pixabay.com/vectors/avatar-icon-placeholder-profile-3814081/ for the placeholder avatar icon
+// Credit to https://pixabay.com/photos/sky-mountains-peak-snow-background-8763986/ for the placeholder background image
