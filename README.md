@@ -111,12 +111,15 @@ If you do not have a netlify account, you will have to create a Netlify Account,
 ```shell
 netlify init
 ```
-You will then get asked "What would you like to do?", select "Create & configure a new site"
-Select the team you would like to use "Example: Personal"
-Give your site a name "Example:yourname-portfolio-website"
-It will ask you your build command by default it will have "npm run build", you can leave this blank and hit enter or type "npm run build" and hit enter
-It will ask you "Directory to deploy (blank for current dir):" by default it should select "dist", you can leave it blank and hit enter or you can type in "dist" and hit enter
+During the setup process, you will encounter several prompts:
+- When prompted `What would you like to do?`, choose `Create & configure a new site`
+- For the team selection, opt for your preferred team (e.g., `Personal`), (remember this is dependent on the team name you created when signing up for a Netlify account)
+- Assign a name to your site when asked. For instance, `<replace with your name>-portfolio-website`
+- Upon being asked for a build command, the default suggestion will be `npm run build`. You can either process with this by pressing enter or explicitly type `npm run build` before hitting enter
+- Finally, for deployment directory, `dist` will be suggested. You can confirm this choice by pressing enter or input `dist` yourself and then press enter.
+
+After completing these steps your application will be deploying on Netlify. So everytime you make a new push to your GitHub repository it will automatically deploy the site for you.
 
 ## Live Application
-If you are interested in seeing how the application looks in a production level setting check out the link below:
+If you are interested in seeing how this application looks in a production level setting check out the link below:
 [Deployed Application](https://my-portfolio-template.netlify.app/)
