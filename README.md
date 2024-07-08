@@ -1,5 +1,5 @@
 # Portfolio Template
-[Description](#description) | [Prerequisites](#prerequisites) | [Demo](#demo) | [Important Git/Github Expectations](#important-gitgithub-expectations) | [Getting Started](#getting-started) | [Next Steps](#next-steps) | [Contributors](#contributors) | [Deployment](#deployment)
+[Description](#description) | [Prerequisites](#prerequisites) | [Demo](#demo) | [Important Git/Github Expectations](#important-gitgithub-expectations) | [Getting Started](#getting-started) | [Next Steps](#next-steps) | [Contributors](#contributors) | [Deployment](#deployment) | [Live Application](#live-application)
 ## Description
 This is a template portfolio that was built with React. You can use this project to help you build out your porfolio. This project provides the foundation for a portfolio and has minimal styling in place. There are currently four routes in this project: a `home page`, `projects page`, `contact page`, and `about me page`. The technologies used on this project include:
 
@@ -43,18 +43,18 @@ npm --version
 
 ![Git Fork Example](/readme_files/Git_Fork_Example.png  )
 3. **Cloning Repository to your computer**
-- After forking the repository you will need to open a terminal to clone or pull the repository. To find the URL to clone or pull there is a green button that says "code" if you click on it a drop down will give you the URL so you can copy that URL, below is an example image to guide you:
+- After forking the repository you will need to use the terminal to clone or pull the repository. To find the URL to clone or pull there is a green button that says "code" if you click on it a drop down will give you the URL so you can copy that URL, below is an example image to guide you:
 
 ![Git Clone Example](/readme_files/Git_Clone_Example.png)
 
-- Then open a terminal and run the following command:
+- Then use the terminal, run this command::
 ```shell
-git clone https://github.com/<git_username>/<github_repo_name>.git
+git clone https://github.com/<github_username>/<github_repo_name>.git
 ```
 4. **Opening Project**
 - Once you have this project on your computer open it in a code editor of choice (Visual Studio Code recommended)
 5. **Installing project dependencies**
-- After you have the project open in your code editor, open a terminal and run the command (make sure you are in the correct working directory): 
+- After you have the project open in your code editor, use the terminal, run this command (make sure you are in the correct working directory): 
 ```shell
 npm install
 ``` 
@@ -90,4 +90,33 @@ There are a lot more steps to accomplish to fully turn this template into your o
 ## Deployment
 Use netlify to deploy your application, follow the steps below to deploy this project to Netlify:
 
-1.
+1. **Build Your Application**
+- Use the terminal, run this command:
+```shell
+npm run build
+```
+2. **Install Netlify CLI**
+- Use the terminal, run this command:
+```shell
+npm install netlify-cli -g
+```
+3. **Login to Netlify**
+- Use the terminal and login to netlify:
+```shell
+netlify login
+```
+If you do not have a netlify account, you will have to create a Netlify Account, to create a Netlify account go to: [Netlify's Website](https://www.netlify.com/) to create a new account, then try logging in with the terminal
+
+4. **Initialize Your Site with Netlify**
+```shell
+netlify init
+```
+You will then get asked "What would you like to do?", select "Create & configure a new site"
+Select the team you would like to use "Example: Personal"
+Give your site a name "Example:yourname-portfolio-website"
+It will ask you your build command by default it will have "npm run build", you can leave this blank and hit enter or type "npm run build" and hit enter
+It will ask you "Directory to deploy (blank for current dir):" by default it should select "dist", you can leave it blank and hit enter or you can type in "dist" and hit enter
+
+## Live Application
+If you are interested in seeing how the application looks in a production level setting check out the link below:
+[Deployed Application](https://my-portfolio-template.netlify.app/)
