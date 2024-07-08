@@ -20,7 +20,9 @@ This is a template portfolio that was built with React. You can use this project
 - Understand how to use CSS to build responsive web pages
 
 ## Demo
-Below is a demo of what the project will look like when you first run the project.
+Below is a demo of what the project will look like when you first run the project. This is a thumbnail so you will need to click on it to view the video in Vimeo.
+
+[![Watch the video](readme_files/Portfolio_Demo_Thumbnail.png)](https://vimeo.com/980251710)
 
 ## Important Git/GitHub Expectations:
 - The original GitHub repository is not allowed to have edits from anyone who is not a contributor. All the contributors will be listed in the [Contributors](#contributors) section of the README
