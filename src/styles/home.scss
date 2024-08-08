@@ -22,16 +22,27 @@
       margin-bottom: 15px;
       font-size: 1.2rem;
       max-width: 700px;
+      color:white;
+    }
+    .subsection-paragraph2 {
+      margin-bottom: 15px;
+      font-size: 1.2rem;
+      max-width: 700px;
+      color:rgb(10, 10, 10);
     }
     a {
-      border: solid 1px black;
+      border: solid 1px rgb(255, 255, 255);
       max-width: 200px;
       padding: 5px;
       text-align: center;
+      background-color:white;
     }
     a:hover {
       background-color: black;
       color: white;
+    }
+    .text-4xl {
+      color:white;
     }
   }
   .home-hero {
