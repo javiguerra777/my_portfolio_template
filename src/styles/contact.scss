@@ -6,7 +6,8 @@
   .form-container {
     width: 90%;
     @media screen and (min-width: $laptop) {
-      width: 800px;
+      width: 400px;
+      border: none;
     }
   }
   form {
@@ -14,11 +15,15 @@
     flex-direction: column;
     button[type='submit'] {
       height: 50px;
-      border: solid 1px black;
+      display: inline-block;
+      padding: 6px 15px 6px 15px;
+      color: white;
+      background-color: #967BB6;
+      border-radius: 15px;
     }
     input[type='text'], input[type='email'], textarea {
       margin-bottom: 10px;
-      border: solid 1px black;
+      border: solid 1px #967BB6;
       width: 100%;
       padding: 5px;
       border-radius: 5px;

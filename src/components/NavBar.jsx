@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom"
 import { motion } from "framer-motion";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";
-import DownloadResume from "./DownloadResume";
+// import DownloadResume from "./DownloadResume";
 
 const sidebarVariants = {
   open: {
@@ -30,15 +30,12 @@ const NavBar = () => {
   const [open, setOpen] = useState(false);
   return (
     <nav className="navigation px-4 py-2">
-      <section>
-        <h1 className="text-3xl font-bold">My Portfolio</h1>
-      </section>
       <section className="lg-links">
         <NavLink to="/">Home</NavLink>
+        <NavLink to="/about">About</NavLink>
         <NavLink to="/projects">Projects</NavLink>
         <NavLink to="/contact">Contact</NavLink>
-        <NavLink to="/about">About</NavLink>
-        <DownloadResume />
+        {/* <DownloadResume /> */}
       </section>
       <section className="sm-active">
         <button 
@@ -66,10 +63,10 @@ const NavBar = () => {
           </button>
         </section>
         <NavLink to="/">Home</NavLink>
+        <NavLink to="/about">About</NavLink>
         <NavLink to="/projects">Projects</NavLink>
         <NavLink to="/contact">Contact</NavLink>
-        <NavLink to="/about">About</NavLink>
-        <DownloadResume />
+        {/* <DownloadResume /> */}
       </motion.aside>
     </nav>
   )

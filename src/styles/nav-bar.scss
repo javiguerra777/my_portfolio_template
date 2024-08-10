@@ -3,9 +3,10 @@
   justify-content: space-between;
   align-items: center;
   min-height: 100px;
-  background-color: #744af6;
+  background-color: #967BB6;
   color: white;
   position: sticky;
+  text-transform: lowercase;
   top: 0;
   z-index: 98;
   .lg-links {
@@ -16,6 +17,13 @@
     }
     a {
       margin-left: 20px;
+      display: inline-block;
+      padding: 6px 15px 6px 15px;
+      text-decoration: none;
+      color: white;
+      background-color: #967BB6;
+      border-radius: 15px;
+      transition: all 0.3s ease;
     }
   }
   .sm-active {
@@ -44,8 +52,10 @@
     }
   }
   a:hover {
-    color: blue;
-    text-decoration: underline;
+    color: #967BB6;
+    background-color: white;
+    // box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    // transform: translateY(-0.5px);
   }
   button:hover {
     background-color: gray;

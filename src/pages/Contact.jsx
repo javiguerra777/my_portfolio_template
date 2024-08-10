@@ -14,39 +14,37 @@ const Contact = () => {
   return (
     <main className="contact-container">
       <section className="border border-2 p-2 rounded-md form-container">
-      <h2 className="text-2xl font-medium text-center">Contact Form</h2>
-      <p className="text-lg text-center">If you are interested in my work, fill out this form below</p>
+      {/* <h2 className="text-2xl font-medium text-center">Contact Form</h2> */}
+      <p className="text-lg text-center">Reach out below!</p><br />
       <form onSubmit={handleSubmit(onSubmit)}>
       <label htmlFor="email">
-          <p>Your Email</p>
-          <input
+          Email: <input
           {...register("email", { required: true })}
           type="email" 
           id="email" 
-          placeholder="Enter your email here"
+          placeholder=""
           required
           />
         </label>
         <label htmlFor="subject">
-          <p>Subject</p>
-          <input 
+          Subject: <input 
           {...register("subject", { required: true })}
           type="text" 
           id="subject"
-          placeholder="Enter your subject here"
+          placeholder=""
           required
           />
         </label>
         <label htmlFor="body">
-          <p>Body</p>
+          Message: 
           <textarea
           {...register("body", { required: true })}
           id="body" 
-          placeholder="Enter your message here"
+          placeholder=""
           required
           />
         </label>
-        <button type="submit">Send Email</button>
+        <button type="submit">Send</button>
       </form>
       </section>
     </main>

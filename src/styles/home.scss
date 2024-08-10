@@ -24,14 +24,19 @@
       max-width: 700px;
     }
     a {
-      border: solid 1px black;
-      max-width: 200px;
-      padding: 5px;
-      text-align: center;
+      display: inline-block;
+      padding: 6px 15px 6px 15px;
+      text-decoration: none;
+      color: white;
+      background-color: #967BB6;
+      border-radius: 15px;
+      transition: all 0.3s ease;
     }
     a:hover {
-      background-color: black;
-      color: white;
+      color: #967BB6;
+      background-color: white;
+      // box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      // transform: translateY(-0.5px);
     }
   }
   .home-hero {
