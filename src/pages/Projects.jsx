@@ -10,27 +10,27 @@ const myProjects = [
   {
     title: 'HTML Project: Food Preferences',
     description: 'A project to use HTML to create a webpage form to select food preferences',
-    repositoryLink: 'Link to the GitHub repository',
+    repositoryLink: 'https://github.com/Solemai/HTML-Project-Food-Preferences.git',
   },
   {
     title: 'CSS Project: Welcome to the Enchanted Boutique',
     description: 'A project to showcase CSS stylings on a store webpage',
-    repositoryLink: 'Link to the GitHub repository',
+    repositoryLink: 'https://github.com/Solemai/CSS-Project-Enchanted-Boutique.git',
   },
   {
     title: 'JavaScript Mini-Project: Magic 8 Ball',
-    description: 'Description of project 3',
-    repositoryLink: 'A JavaScript file to showcase a "Magic 8 Ball" to generate a random response whenever the code is ran',
+    description: 'A JavaScript file to showcase a "Magic 8 Ball" to generate a random response whenever the code is ran',
+    repositoryLink: 'https://github.com/Solemai/JSMiniProject-Magic8Ball.git',
   },
   {
     title: 'JavaScript Mini-Project: Store App - Bejeweled Teas',
     description: 'A JavaScript file for a store front that allows the user to output bought items',
-    repositoryLink: 'Link to the GitHub repository',
+    repositoryLink: 'https://github.com/Solemai/JSMiniProject-StoreApp.git',
   },
   {
     title: 'DangoDot: Anime Streaming Site',
     description: 'Capstone Project for an Anime streaming site to showcase HTML/CSS/JS and other technologies in React',
-    repositoryLink: 'Link to the GitHub repository',
+    repositoryLink: 'https://github.com/Solemai/DangoDot.git',
   },
 ];
 const Projects = () => {
